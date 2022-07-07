@@ -29,6 +29,10 @@ contract DEXA {
     // Get different flexibility that is not available for strings
     bytes32 public mybytes32string = "Hello, world!";
 
+    // Address
+    // Account address, smart contract address e.t.c
+    address public myaddress = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
+
     // Local variable
     function getValue() public pure returns (uint256) {
         uint256 value = 1;
