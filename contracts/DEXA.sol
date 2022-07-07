@@ -22,6 +22,13 @@ contract DEXA {
     uint256 public myuint256 = 1;
     uint8 public myuint8 = 1;
 
+    // String
+    string public mystring = "Hello, world!";
+
+    // Store string in bytes32 format
+    // Get different flexibility that is not available for strings
+    bytes32 public mybytes32string = "Hello, world!";
+
     // Local variable
     function getValue() public pure returns (uint256) {
         uint256 value = 1;
