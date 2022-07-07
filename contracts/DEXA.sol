@@ -12,12 +12,10 @@ pragma solidity ^0.8.0;
  */
 
 contract DEXA {
-    // State variables
-    uint256 public count = 0;
+    // Local variables
 
-    // To increment count by 1
-    // Write costs "gas"
-    function incrementCount() public {
-        count++;
+    function getValue() public pure returns (uint256) {
+        uint256 value = 1;
+        return value;
     }
 }
