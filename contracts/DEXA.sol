@@ -12,39 +12,37 @@ pragma solidity ^0.8.0;
  */
 
 contract DEXA {
-    // Mappings
-    mapping(uint256 => string) public names;
-    mapping(uint256 => Book) public books;
-    mapping(address => mapping(uint256 => Book)) public mybooks;
+    // Conditionals and Loops
 
-    struct Book {
-        string title;
-        string author;
-    }
+    uint256[] public numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    address public owner;
 
     constructor() {
-        names[1] = "Adam";
-        names[2] = "Bruce";
-        names[3] = "Carl";
+        owner = msg.sender;
     }
 
-    function addBook(
-        uint256 _id,
-        string memory _title,
-        string memory _author
-    ) public {
-        // Local variables are prefixed with "_" (Underscore) as part of convention
-        books[_id] = Book(_title, _author);
+    function isOwner() public view returns (bool) {
+        return (msg.sender == owner);
     }
 
-    function addMyBook(
-        uint256 _id,
-        string memory _title,
-        string memory _author
-    ) public {
-        // Global variables
-        // msg.sender -> Address of the individual who is calling the smartcontract function.
+    function countEvenNumbers() public view returns (uint256) {
+        uint256 count = 0;
 
-        mybooks[msg.sender][_id] = Book(_title, _author);
+        for (uint256 i = 0; i < numbers.length; i++) {
+            if (isEvenNumber(numbers[i])) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+    function isEvenNumber(uint256 _number) public pure returns (bool) {
+        if (_number % 2 == 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
