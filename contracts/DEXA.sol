@@ -33,6 +33,15 @@ contract DEXA {
     // Account address, smart contract address e.t.c
     address public myaddress = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
 
+    // Structs
+    struct MyStruct {
+        uint256 myuint256;
+        string mystring;
+    }
+
+    // Instantiate struct
+    MyStruct public mystruct = MyStruct(1, "Hello World!");
+
     // Local variable
     function getValue() public pure returns (uint256) {
         uint256 value = 1;
