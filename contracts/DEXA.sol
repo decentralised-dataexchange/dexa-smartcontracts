@@ -12,39 +12,17 @@ pragma solidity ^0.8.0;
  */
 
 contract DEXA {
-    // State variables
-    // State is maintained in the blockchain and it can be updated.
+    // Arrays
+    uint256[] public uintarray = [1, 2, 3];
+    string[] public stringarray = ["apple", "banana", "carrot"];
+    string[] public values;
+    uint256[][] public array2d = [[1, 2, 3], [4, 5, 6]];
 
-    // Types of integers
-    // https://docs.soliditylang.org/en/latest/types.html#integers
-    int256 public myint = 1;
-    uint256 public myuint = 1;
-    uint256 public myuint256 = 1;
-    uint8 public myuint8 = 1;
-
-    // String
-    string public mystring = "Hello, world!";
-
-    // Store string in bytes32 format
-    // Get different flexibility that is not available for strings
-    bytes32 public mybytes32string = "Hello, world!";
-
-    // Address
-    // Account address, smart contract address e.t.c
-    address public myaddress = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
-
-    // Structs
-    struct MyStruct {
-        uint256 myuint256;
-        string mystring;
+    function addValue(string memory _value) public {
+        values.push(_value);
     }
 
-    // Instantiate struct
-    MyStruct public mystruct = MyStruct(1, "Hello World!");
-
-    // Local variable
-    function getValue() public pure returns (uint256) {
-        uint256 value = 1;
-        return value;
+    function valueCount() public view returns (uint256) {
+        return values.length;
     }
 }
