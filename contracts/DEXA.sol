@@ -13,21 +13,15 @@ pragma solidity ^0.8.0;
 
 contract DEXA {
     // State variables
-    uint256 count;
+    uint256 public count;
 
     constructor() public {
         count = 0;
     }
 
-    // To return the current count.
-    // Reads are free in Ethereum
-    function getCount() public view returns (uint256) {
-        return count;
-    }
-
     // To increment count by 1
     // Write costs "gas"
     function incrementCount() public {
-        count += 1;
+        count++;
     }
 }
