@@ -12,8 +12,11 @@ pragma solidity ^0.8.0;
  */
 
 contract DEXA {
-    // Local variables
+    // State variables
+    // State is maintained in the blockchain and it can be updated.
+    uint myuint = 1;
 
+    // Local variable
     function getValue() public pure returns (uint256) {
         uint256 value = 1;
         return value;
