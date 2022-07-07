@@ -15,6 +15,10 @@ contract DEXA {
     // State variables
     uint256 count;
 
+    constructor() public {
+        count = 0;
+    }
+
     // To return the current count.
     // Reads are free in Ethereum
     function getCount() public view returns (uint256) {
