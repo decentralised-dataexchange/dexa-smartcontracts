@@ -12,17 +12,39 @@ pragma solidity ^0.8.0;
  */
 
 contract DEXA {
-    // Arrays
-    uint256[] public uintarray = [1, 2, 3];
-    string[] public stringarray = ["apple", "banana", "carrot"];
-    string[] public values;
-    uint256[][] public array2d = [[1, 2, 3], [4, 5, 6]];
+    // Mappings
+    mapping(uint256 => string) public names;
+    mapping(uint256 => Book) public books;
+    mapping(address => mapping(uint256 => Book)) public mybooks;
 
-    function addValue(string memory _value) public {
-        values.push(_value);
+    struct Book {
+        string title;
+        string author;
     }
 
-    function valueCount() public view returns (uint256) {
-        return values.length;
+    constructor() {
+        names[1] = "Adam";
+        names[2] = "Bruce";
+        names[3] = "Carl";
+    }
+
+    function addBook(
+        uint256 _id,
+        string memory _title,
+        string memory _author
+    ) public {
+        // Local variables are prefixed with "_" (Underscore) as part of convention
+        books[_id] = Book(_title, _author);
+    }
+
+    function addMyBook(
+        uint256 _id,
+        string memory _title,
+        string memory _author
+    ) public {
+        // Global variables
+        // msg.sender -> Address of the individual who is calling the smartcontract function.
+
+        mybooks[msg.sender][_id] = Book(_title, _author);
     }
 }
