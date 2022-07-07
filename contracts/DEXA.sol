@@ -13,11 +13,7 @@ pragma solidity ^0.8.0;
 
 contract DEXA {
     // State variables
-    uint256 public count;
-
-    constructor() public {
-        count = 0;
-    }
+    uint256 public count = 0;
 
     // To increment count by 1
     // Write costs "gas"
