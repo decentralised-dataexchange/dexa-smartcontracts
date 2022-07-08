@@ -12,37 +12,21 @@ pragma solidity ^0.8.0;
  */
 
 contract DEXA {
-    // Conditionals and Loops
-
-    uint256[] public numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-    address public owner;
-
-    constructor() {
-        owner = msg.sender;
+    struct DataSource {
+        address account;
+        string label;
+        bool revoked;
     }
 
-    function isOwner() public view returns (bool) {
-        return (msg.sender == owner);
-    }
+    mapping(string => DataSource) public dataSourceRegistry;
 
-    function countEvenNumbers() public view returns (uint256) {
-        uint256 count = 0;
+    function addDataSource() public {}
 
-        for (uint256 i = 0; i < numbers.length; i++) {
-            if (isEvenNumber(numbers[i])) {
-                count++;
-            }
-        }
+    function removeDataSource() public {}
 
-        return count;
-    }
+    function updateDataSource() public {}
 
-    function isEvenNumber(uint256 _number) public pure returns (bool) {
-        if (_number % 2 == 0) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+    function publishDDAContentIdentifier() public {}
+
+    function publishAccessToken() public {}
 }
