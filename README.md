@@ -17,7 +17,7 @@
 
 ## About
 
-This repository hosts the source code for DEXA smartcontracts.**https://ontochain.ngi.eu/content/ps-sda**.
+This repository hosts the source code for DEXA smartcontracts and is part of the deliverables for Provenance services with smart data agreement ([PS-SDA](https://ontochain.ngi.eu/content/ps-sda)) project that has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 957338. 
 ## Release Status
 
 Not released, work in progress.
