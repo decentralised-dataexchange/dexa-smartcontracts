@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "dexa-smartcontracts"
+version = "0.1.0"
+description = "Hosts DEXA smart contracts."
+authors = ["George J Padayatti <george.padayatti@igrant.io>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+web3 = {extras = ["tester"], version = "^5.30.0"}
+py-solc-x = "^1.1.1"
+loguru = "^0.6.0"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^5.0.4"
+autopep8 = "^1.7.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
