@@ -1,0 +1,151 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="356pt" height="732pt" viewBox="0.00 0.00 356.14 732">
+<g id="graph0" class="graph" transform="translate(6.457977314545091,555.837121634613) scale(0.620713745763057)" data-name="G">
+
+<polygon fill="#2e3e56" stroke="none" points="-4,4 -4,-728 352.14,-728 352.14,4 -4,4"/>
+<g id="clust1" class="cluster" data-name="clusterDEXA">
+
+<path fill="#445773" stroke="#445773" d="M20,-8C20,-8 328.14,-8 328.14,-8 334.14,-8 340.14,-14 340.14,-20 340.14,-20 340.14,-567 340.14,-567 340.14,-573 334.14,-579 328.14,-579 328.14,-579 20,-579 20,-579 14,-579 8,-573 8,-567 8,-567 8,-20 8,-20 8,-14 14,-8 20,-8" style=""/>
+<text text-anchor="middle" x="174.07" y="-562.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">DEXA</text>
+</g>
+<g id="clust2" class="cluster" data-name="cluster_01">
+
+<polygon fill="#2e3e56" stroke="black" points="32.88,-587 32.88,-716 316.95,-716 316.95,-587 32.88,-587" style=""/>
+<text text-anchor="middle" x="174.91" y="-699.4" font-family="Times,serif" font-size="14.00" style="">Legend</text>
+</g>
+<!-- DEXA.isOwner -->
+<g id="node1" class="node" pointer-events="visible" data-name="DEXA.isOwner">
+
+<polygon fill="#edad56" stroke="#1bc6a6" stroke-width="3" points="153.11,-516.54 153.11,-531.46 125.44,-542 86.31,-542 58.64,-531.46 58.64,-516.54 86.31,-506 125.44,-506 153.11,-516.54"/>
+<polygon fill="none" stroke="#1bc6a6" stroke-width="3" points="157.1,-513.79 157.1,-534.21 126.17,-546 85.58,-546 54.65,-534.21 54.65,-513.79 85.58,-502 126.17,-502 157.1,-513.79"/>
+<text text-anchor="middle" x="105.88" y="-519.8" font-family="Times,serif" font-size="14.00">isOwner</text>
+</g>
+<!-- DEXA.&lt;Constructor&gt; -->
+<g id="node2" class="node" pointer-events="visible" data-name="DEXA.&lt;Constructor&gt;">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="105.88" cy="-466" rx="67.55" ry="18"/>
+<text text-anchor="middle" x="105.88" y="-461.8" font-family="Times,serif" font-size="14.00">&lt;Constructor&gt;</text>
+</g>
+<!-- DEXA.changeOwner -->
+<g id="node3" class="node" pointer-events="visible" data-name="DEXA.changeOwner">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="105.88" cy="-412" rx="64.82" ry="18"/>
+<text text-anchor="middle" x="105.88" y="-407.8" font-family="Times,serif" font-size="14.00">changeOwner</text>
+</g>
+<!-- DEXA.getOwner -->
+<g id="node4" class="node" pointer-events="visible" data-name="DEXA.getOwner">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="105.88" cy="-358" rx="49.23" ry="18"/>
+<text text-anchor="middle" x="105.88" y="-353.8" font-family="Times,serif" font-size="14.00">getOwner</text>
+</g>
+<!-- DEXA.isMember -->
+<g id="node5" class="node" pointer-events="visible" data-name="DEXA.isMember">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="281.95" cy="-169" rx="50.39" ry="18"/>
+<text text-anchor="middle" x="281.95" y="-164.8" font-family="Times,serif" font-size="14.00">isMember</text>
+</g>
+<!-- DEXA.addOrganisation -->
+<g id="node6" class="node" pointer-events="visible" data-name="DEXA.addOrganisation">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="105.88" cy="-304" rx="74.73" ry="18"/>
+<text text-anchor="middle" x="105.88" y="-299.8" font-family="Times,serif" font-size="14.00">addOrganisation</text>
+</g>
+<!-- DEXA.addOrganisation&#45;&gt;DEXA.isMember -->
+<g id="edge1" class="edge" data-name="DEXA.addOrganisation-&gt;DEXA.isMember">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M163.75,-292.35C174.94,-288.55 186.16,-283.55 195.75,-277 226.71,-255.87 251.73,-220.05 266.46,-195.5"/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="269.58,-197.1 271.59,-186.7 263.53,-193.58 269.58,-197.1"/>
+</g>
+<!-- DEXA.removeOrganisation -->
+<g id="node7" class="node" pointer-events="visible" data-name="DEXA.removeOrganisation">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="105.88" cy="-250" rx="89.75" ry="18"/>
+<text text-anchor="middle" x="105.88" y="-245.8" font-family="Times,serif" font-size="14.00">removeOrganisation</text>
+</g>
+<!-- DEXA.removeOrganisation&#45;&gt;DEXA.isMember -->
+<g id="edge2" class="edge" data-name="DEXA.removeOrganisation-&gt;DEXA.isMember">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M161.79,-235.86C173.23,-232.21 185.05,-227.91 195.75,-223 214.96,-214.19 234.98,-201.69 250.79,-190.94"/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="252.88,-193.75 259.11,-185.17 248.89,-187.99 252.88,-193.75"/>
+</g>
+<!-- DEXA.addAccessToken -->
+<g id="node8" class="node" pointer-events="visible" data-name="DEXA.addAccessToken">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="105.88" cy="-196" rx="77" ry="18"/>
+<text text-anchor="middle" x="105.88" y="-191.8" font-family="Times,serif" font-size="14.00">addAccessToken</text>
+</g>
+<!-- DEXA.addAccessToken&#45;&gt;DEXA.isMember -->
+<g id="edge3" class="edge" data-name="DEXA.addAccessToken-&gt;DEXA.isMember">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M170.7,-186.1C188.71,-183.31 208.15,-180.29 225.61,-177.58"/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="226.29,-181.02 235.64,-176.03 225.22,-174.1 226.29,-181.02"/>
+</g>
+<!-- DEXA.releaseAccessToken -->
+<g id="node9" class="node" pointer-events="visible" data-name="DEXA.releaseAccessToken">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="105.88" cy="-142" rx="89.72" ry="18"/>
+<text text-anchor="middle" x="105.88" y="-137.8" font-family="Times,serif" font-size="14.00">releaseAccessToken</text>
+</g>
+<!-- DEXA.releaseAccessToken&#45;&gt;DEXA.isMember -->
+<g id="edge4" class="edge" data-name="DEXA.releaseAccessToken-&gt;DEXA.isMember">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M177.43,-152.94C193.35,-155.41 210.04,-158 225.26,-160.36"/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="225.11,-163.88 235.53,-161.96 226.18,-156.96 225.11,-163.88"/>
+</g>
+<!-- DEXA.emitDADID -->
+<g id="node10" class="node" pointer-events="visible" data-name="DEXA.emitDADID">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="105.88" cy="-88" rx="59.12" ry="18"/>
+<text text-anchor="middle" x="105.88" y="-83.8" font-family="Times,serif" font-size="14.00">emitDADID</text>
+</g>
+<!-- DEXA.emitDADID&#45;&gt;DEXA.isMember -->
+<g id="edge5" class="edge" data-name="DEXA.emitDADID-&gt;DEXA.isMember">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M152.51,-99.3C166.66,-103.48 182.12,-108.75 195.75,-115 214.96,-123.81 234.98,-136.31 250.79,-147.06"/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="248.89,-150.01 259.11,-152.83 252.88,-144.25 248.89,-150.01"/>
+</g>
+<!-- DEXA.emitDDADID -->
+<g id="node11" class="node" pointer-events="visible" data-name="DEXA.emitDDADID">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="105.88" cy="-34" rx="66.07" ry="18"/>
+<text text-anchor="middle" x="105.88" y="-29.8" font-family="Times,serif" font-size="14.00">emitDDADID</text>
+</g>
+<!-- DEXA.emitDDADID&#45;&gt;DEXA.isMember -->
+<g id="edge6" class="edge" data-name="DEXA.emitDDADID-&gt;DEXA.isMember">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M160.03,-44.42C172.42,-48.36 185.1,-53.73 195.75,-61 226.71,-82.13 251.73,-117.95 266.46,-142.5"/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="263.53,-144.42 271.59,-151.3 269.58,-140.9 263.53,-144.42"/>
+</g>
+<!-- key -->
+<g id="node12" class="node" pointer-events="visible" data-name="key">
+
+<polygon fill="#edad56" stroke="none" stroke-width="3" points="170.88,-683 40.88,-683 40.88,-595 170.88,-595 170.88,-683"/>
+<text text-anchor="start" x="90.51" y="-664.4" font-family="Times,serif" font-size="14.00">Internal Call</text>
+<text text-anchor="start" x="86.62" y="-644.4" font-family="Times,serif" font-size="14.00">External Call</text>
+<text text-anchor="start" x="64.08" y="-624.4" font-family="Times,serif" font-size="14.00">Defined Contract</text>
+<text text-anchor="start" x="50.48" y="-604.4" font-family="Times,serif" font-size="14.00">Undefined Contract</text>
+</g>
+<!-- key2 -->
+<g id="node13" class="node" pointer-events="visible" data-name="key2">
+
+<polygon fill="#edad56" stroke="none" stroke-width="3" points="308.95,-683 254.95,-683 254.95,-595 308.95,-595 308.95,-683"/>
+<text text-anchor="start" x="271.95" y="-664.4" font-family="Times,serif" font-size="14.00">   </text>
+<text text-anchor="start" x="271.95" y="-644.4" font-family="Times,serif" font-size="14.00">   </text>
+<polygon fill="#445773" stroke="none" points="269.95,-619 269.95,-639 294.95,-639 294.95,-619 269.95,-619"/>
+<text text-anchor="start" x="271.95" y="-624.4" font-family="Times,serif" font-size="14.00">   </text>
+<polygon fill="none" stroke="#e8726d" points="271.95,-601 271.95,-617 292.95,-617 292.95,-601 271.95,-601"/>
+</g>
+<!-- key&#45;&gt;key2 -->
+<g id="edge7" class="edge" data-name="key-&gt;key2">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M163.88,-669C206.93,-669 220.21,-669 258.61,-669"/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="258.95,-672.5 268.95,-669 258.95,-665.5 258.95,-672.5"/>
+</g>
+<!-- key&#45;&gt;key2 -->
+<g id="edge8" class="edge" data-name="key-&gt;key2">
+
+<path fill="none" stroke="white" stroke-width="2" d="M163.88,-649C206.93,-649 220.21,-649 258.61,-649"/>
+<polygon fill="white" stroke="white" stroke-width="2" points="258.95,-652.5 268.95,-649 258.95,-645.5 258.95,-652.5"/>
+</g>
+</g>
+</svg>
