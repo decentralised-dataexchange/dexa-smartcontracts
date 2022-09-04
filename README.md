@@ -19,6 +19,13 @@
 
 This repository hosts the source code for DEXA smartcontracts and is part of the deliverables for Provenance services with smart data agreement ([PS-SDA](https://ontochain.ngi.eu/content/ps-sda)) project that has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 957338. 
 
+## Contract Deployments
+
+
+| Network Name | name    | chainId | hexChainId | Registry Address                                                                                                              |
+| ------------ | ------- | ------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| Rinkeby      | rinkeby | 4       | 0x4        | [0x71507Ea10417F95F36ABAdFA13C141D597afcb84](https://rinkeby.etherscan.io/address/0x71507Ea10417F95F36ABAdFA13C141D597afcb84) |
+
 ## Contract design
 
 ![Image](./ext/contract-design.png "contract-design")
