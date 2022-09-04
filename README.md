@@ -19,6 +19,10 @@
 
 This repository hosts the source code for DEXA smartcontracts and is part of the deliverables for Provenance services with smart data agreement ([PS-SDA](https://ontochain.ngi.eu/content/ps-sda)) project that has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 957338. 
 
+## Release Status
+
+Not released, work in progress.
+
 ## Contract Deployments
 
 
@@ -26,13 +30,22 @@ This repository hosts the source code for DEXA smartcontracts and is part of the
 | ------------ | ------- | ------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | Rinkeby      | rinkeby | 4       | 0x4        | [0x71507Ea10417F95F36ABAdFA13C141D597afcb84](https://rinkeby.etherscan.io/address/0x71507Ea10417F95F36ABAdFA13C141D597afcb84) |
 
-## Contract design
+## Compile and deploy the contract
 
-![Image](./ext/contract-design.png "contract-design")
+Follow the instructions as given below:
 
-## Release Status
+1. Run `git clone git@github.com:decentralised-dataexchange/dexa-smartcontracts.git` to clone the repository.
+2. `cd` in to the cloned folder.
+3. Run `poetry shell` to setup a python virtual environment.
+4. Run `poetry install` to install the dependencies.
+5. Configure the following environment variables.
+   1. `ETH_NODE_RPC` - Blockchain node RPC endpoint
+   2. `ETH_PRIVATE_KEY` - Private key associated with the contract creator account address
+   3. `ETH_ACCOUNT_ADDRESS` - Contract creator account address
+6. `python scripts/compile_and_deploy.py` to compile and deploy.
+7. If the script successfully executes, contract address is displayed in the terminal.
 
-Not released, work in progress.
+
 ## Contributing
 
 Feel free to improve the plugin and send us a pull request. If you found any problems, please create an issue in this repo.

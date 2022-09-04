@@ -77,7 +77,7 @@ async def deploy(web3, private_key: str, account_address: str, contract_path: st
 if __name__ == "__main__":
 
     provider_rpc = {
-        'rinkeby': str(os.environ.get("INFURA_URL")),
+        'rinkeby': str(os.environ.get("ETH_NODE_RPC")),
     }
 
     web3 = Web3(Web3.HTTPProvider(provider_rpc['rinkeby']))
