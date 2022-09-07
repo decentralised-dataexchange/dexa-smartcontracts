@@ -19,6 +19,7 @@
 
 This repository hosts the source code for DEXA smartcontracts and is part of the deliverables for Provenance services with smart data agreement ([PS-SDA](https://ontochain.ngi.eu/content/ps-sda)) project that has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 957338. 
 
+This repository hosts the source code for DEXA smart contracts that can be deployed to locally or to cloud infrastructure with an Ethereum blockchain configured.
 ## Release Status
 
 Not released, work in progress.
