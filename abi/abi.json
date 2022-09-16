@@ -282,6 +282,11 @@
                 "internalType": "string",
                 "name": "_nonce",
                 "type": "string"
+            },
+            {
+                "internalType": "address",
+                "name": "_organisation",
+                "type": "address"
             }
         ],
         "name": "releaseAccessToken",
