@@ -27,7 +27,7 @@ Not released, work in progress.
 
 | Network Name | name    | chainId | hexChainId | Registry Address                                                                                                              |
 | ------------ | ------- | ------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Rinkeby      | rinkeby | 4       | 0x4        | [0x71507Ea10417F95F36ABAdFA13C141D597afcb84](https://rinkeby.etherscan.io/address/0x71507Ea10417F95F36ABAdFA13C141D597afcb84) |
+| Rinkeby      | rinkeby | 4       | 0x4        | [0x58c77570BaD99116169D4700BDf7b2Ed845fcf74](https://rinkeby.etherscan.io/address/0x58c77570BaD99116169D4700BDf7b2Ed845fcf74) |
 
 ## Compile and deploy the contract
 

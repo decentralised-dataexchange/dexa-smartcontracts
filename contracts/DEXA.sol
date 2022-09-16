@@ -105,19 +105,19 @@ contract DEXA {
     /// @dev Releases encrypted access token.
     /// @param _nonce: Nonce associated with the DDA pull data didcomm message
     /// @return Return the access token
-    function releaseAccessToken(string memory _nonce)
+    function releaseAccessToken(string memory _nonce, address _organisation)
         public
         returns (string memory)
     {
         require(isMember(msg.sender), "Not member of whitelist.");
 
-        string memory token = accesstokens[msg.sender][_nonce];
+        string memory token = accesstokens[_organisation][_nonce];
 
         // Emit the event
         emit AccessTokenReleased(msg.sender, token, _nonce);
 
         // Delete the released token.
-        delete accesstokens[msg.sender][_nonce];
+        delete accesstokens[_organisation][_nonce];
 
         return token;
     }
