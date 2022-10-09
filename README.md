@@ -25,9 +25,9 @@ Not released, work in progress.
 ## Contract Deployments
 
 
-| Network Name | name    | chainId | hexChainId | Registry Address                                                                                                              |
-| ------------ | ------- | ------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Rinkeby      | rinkeby | 4       | 0x4        | [0x58c77570BaD99116169D4700BDf7b2Ed845fcf74](https://rinkeby.etherscan.io/address/0x58c77570BaD99116169D4700BDf7b2Ed845fcf74) |
+| Network Name | name    | chainId | hexChainId | Registry Address                                                                                                             |
+| ------------ | ------- | ------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Goerli       | rinkeby | 5       | 0x5        | [0xFCeE40992B9Bff888d2Faa0691878AD8D7567BA7](https://goerli.etherscan.io/address/0xFCeE40992B9Bff888d2Faa0691878AD8D7567BA7) |
 
 ## Compile and deploy the contract
 
