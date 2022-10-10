@@ -25,9 +25,10 @@ Not released, work in progress.
 ## Contract Deployments
 
 
-| Network Name | name    | chainId | hexChainId | Registry Address                                                                                                             |
-| ------------ | ------- | ------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Goerli       | rinkeby | 5       | 0x5        | [0xFCeE40992B9Bff888d2Faa0691878AD8D7567BA7](https://goerli.etherscan.io/address/0xFCeE40992B9Bff888d2Faa0691878AD8D7567BA7) |
+| Network Name | name    | chainId | hexChainId | Registry Address                                                                                                                |
+| ------------ | ------- | ------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| Goerli       | rinkeby | 5       | 0x5        | [0xFCeE40992B9Bff888d2Faa0691878AD8D7567BA7](https://goerli.etherscan.io/address/0xFCeE40992B9Bff888d2Faa0691878AD8D7567BA7)    |
+| Mumbai       | mumbai  | 80001   | 0x13881    | [0xFCeE40992B9Bff888d2Faa0691878AD8D7567BA7](https://mumbai.polygonscan.com/address/0xFCeE40992B9Bff888d2Faa0691878AD8D7567BA7) |
 
 ## Compile and deploy the contract
 
