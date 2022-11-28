@@ -25,26 +25,46 @@ Not released, work in progress.
 ## Contract Deployments
 
 
-| Network Name | name    | chainId | hexChainId | Registry Address                                                                                                                |
-| ------------ | ------- | ------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| Goerli       | rinkeby | 5       | 0x5        | [0xFCeE40992B9Bff888d2Faa0691878AD8D7567BA7](https://goerli.etherscan.io/address/0xFCeE40992B9Bff888d2Faa0691878AD8D7567BA7)    |
-| Mumbai       | mumbai  | 80001   | 0x13881    | [0xFCeE40992B9Bff888d2Faa0691878AD8D7567BA7](https://mumbai.polygonscan.com/address/0xFCeE40992B9Bff888d2Faa0691878AD8D7567BA7) |
+| Network Name | name    | chainId  | hexChainId | Registry Address                                                                                                                |
+| ------------ | ------- | -------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| Goerli       | rinkeby | 5        | 0x5        | [0xFCeE40992B9Bff888d2Faa0691878AD8D7567BA7](https://goerli.etherscan.io/address/0xFCeE40992B9Bff888d2Faa0691878AD8D7567BA7)    |
+| Mumbai       | mumbai  | 80001    | 0x13881    | [0xFCeE40992B9Bff888d2Faa0691878AD8D7567BA7](https://mumbai.polygonscan.com/address/0xFCeE40992B9Bff888d2Faa0691878AD8D7567BA7) |
+| Sepolia      | sepolia | 11155111 | 0x11155111 | [0x4700b9C4A340959AABb0da3FfCeb24123EE9FED6](https://sepolia.etherscan.io/address/0x4700b9C4A340959AABb0da3FfCeb24123EE9FED6)   |
 
 ## Compile and deploy the contract
+
+### From source
 
 Follow the instructions as given below:
 
 1. Run `git clone git@github.com:decentralised-dataexchange/dexa-smartcontracts.git` to clone the repository.
-2. `cd` in to the cloned folder.
+2. `cd dexa-smartcontracts` in to the cloned folder
 3. Run `poetry shell` to setup a python virtual environment.
 4. Run `poetry install` to install the dependencies.
 5. Configure the following environment variables.
    1. `ETH_NODE_RPC` - Blockchain node RPC endpoint
-   2. `ETH_PRIVATE_KEY` - Private key associated with the contract creator account address
-   3. `ETH_ACCOUNT_ADDRESS` - Contract creator account address
+   2. `INTERMEDIARY_ETH_PRIVATE_KEY` - Private key associated with the contract creator account address
+   3. `INTERMEDIARY_ETH_ACCOUNT_ADDRESS` - Contract creator account address
 6. `python scripts/compile_and_deploy.py` to compile and deploy.
 7. If the script successfully executes, contract address is displayed in the terminal.
 
+### Using docker
+
+Follow the instructions as given below:
+
+1. Run `git clone git@github.com:decentralised-dataexchange/dexa-smartcontracts.git` to clone the repository.
+2. `cd dexa-smartcontracts` in to the cloned folder
+3. Run the below command to build the docker image.
+
+```bash
+$ docker build -t igrantio/dexa-smartcontracts:0.1.0 -f docker/Dockerfile .
+```
+
+4. Run the below command to compile and deploy the smart contract
+
+```bash
+$ docker run -e ETH_NODE_RPC='' -e INTERMEDIARY_ETH_PRIVATE_KEY='' -e INTERMEDIARY_ETH_ACCOUNT_ADDRESS='' -it igrantio/dexa-smartcontracts:0.1.0
+```
 
 ## Contributing
 
