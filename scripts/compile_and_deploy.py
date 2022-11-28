@@ -76,7 +76,7 @@ async def deploy(
 if __name__ == "__main__":
 
     provider_rpc = {
-        "rinkeby": str(os.environ.get("POLYGON_NODE_RPC")),
+        "rinkeby": str(os.environ.get("ETH_NODE_RPC")),
     }
 
     web3 = Web3(Web3.HTTPProvider(provider_rpc["rinkeby"]))
