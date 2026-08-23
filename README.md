@@ -71,7 +71,7 @@ $ docker run -e ETH_NODE_RPC='' -e INTERMEDIARY_ETH_PRIVATE_KEY='' -e INTERMEDIA
 Feel free to improve the plugin and send us a pull request. If you found any problems, please create an issue in this repo.
 
 ## Licensing
-Copyright (c) 2022-25 LCubed AB (iGrant.io), Sweden
+Copyright (c) 2022-25 iGrant Technologies AB (iGrant.io), Sweden
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.
 
